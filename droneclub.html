@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vihaan</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+}
+
+/* Navbar */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#111;
+border-bottom:1px solid #222;
+}
+
+nav h1{
+color:#00e0ff;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:15px;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#00e0ff;
+}
+
+/* Header */
+header{
+text-align:center;
+padding:80px 20px 40px;
+}
+
+.logo {
+    display: inline-block;
+    width: 50px;
+    background-color: #00e0ff;
+    margin-top: 10px;
+}
+
+header h2{
+font-size:40px;
+margin-bottom:10px;
+}
+
+header p{
+color:#bbb;
+}
+
+/* Team Section */
+.team{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:40px 80px 80px;
+}
+
+/* Team Card */
+.card{
+background:#181818;
+border-radius:10px;
+padding:20px;
+text-align:center;
+transition:0.3s;
+border:1px solid #222;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#00e0ff;
+}
+
+.card img{
+width:100%;
+height:260px;
+object-fit:fill;
+border-radius:8px;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-bottom:5px;
+}
+
+.role{
+font-size:14px;
+color:#00e0ff;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:14px;
+color:#aaa;
+}
+
+/* Footer */
+footer{
+text-align:center;
+padding:25px;
+background:#111;
+border-top:1px solid #222;
+font-size:14px;
+color:#aaa;
+}
+
+
+
+body{
+margin:0;
+background:#05060a;
+font-family:Arial, Helvetica, sans-serif;
+color:white;
+}
+
+/* SECTION */
+.timeline-section{
+padding:80px 40px;
+text-align:center;
+}
+
+/* TIMELINE LINE */
+.timeline{
+position:relative;
+width:90%;
+margin:auto;
+height:120px;
+}
+
+.timeline::before{
+content:"";
+position:absolute;
+top:50%;
+left:0;
+width:100%;
+height:2px;
+background:linear-gradient(to right,#7a2cff,#d48bff,#7a2cff);
+opacity:0.8;
+}
+
+/* YEAR ITEM */
+.year{
+position:absolute;
+top:50%;
+transform:translate(-50%, -50%);
+text-align:center;
+}
+
+/* DIAMOND NODE */
+.node{
+width:16px;
+height:16px;
+background:transparent;
+border:2px solid #9b59ff;
+transform:rotate(45deg);
+margin:auto;
+}
+
+/* YEAR TEXT */
+.year span{
+display:block;
+margin-bottom:18px;
+font-size:20px;
+color:#888;
+letter-spacing:2px;
+}
+
+/* ACTIVE YEAR */
+.active span{
+color:#d9a9ff;
+font-size:28px;
+font-weight:bold;
+}
+
+.active .node{
+width:24px;
+height:24px;
+background:#c06cff;
+box-shadow:0 0 20px #a855f7,
+           0 0 40px #a855f7,
+           0 0 60px #a855f7;
+}
+
+/* POSITIONING YEARS */
+.y2018{left:5%;}
+.y2019{left:15%;}
+.y2020{left:25%;}
+.y2021{left:35%;}
+.y2022{left:45%;}
+.y2023{left:55%;}
+.y2024{left:65%;}
+.y2025{left:75%;}
+.y2026{left:85%;}
+
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<h1>
+    <img src="https://www.ssgmce.ac.in/vihang/img/logo.png" alt="Vihang Logo" class="logo">
+    Vihang</h1>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Team</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<section class="timeline-section">
+
+<div class="timeline">
+
+<div class="year y2018">
+<span>2018</span>
+<div class="node"></div>
+</div>
+
+<div class="year y2019">
+<span>2019</span>
+<div class="node"></div>
+</div>
+
+<div class="year y2020">
+<span>2020</span>
+<div class="node"></div>
+</div>
+
+<div class="year y2021">
+<span>2021</span>
+<div class="node"></div>
+</div>
+
+<div class="year y2022">
+<span>2022</span>
+<div class="node"></div>
+</div>
+
+<div class="year y2023">
+<span>2023</span>
+<div class="node"></div>
+</div>
+
+<div class="year y2024">
+<span>2024</span>
+<div class="node"></div>
+</div>
+
+<div class="year y2025">
+<span>2025</span>
+<div class="node"></div>
+</div>
+
+<div class="year y2026 active">
+<span>2026</span>
+<div class="node"></div>
+</div>
+
+</div>
+
+</section>
+
+<header>
+<h2>Our Team</h2>
+<p>Meet the amazing people behind Vihaan</p>
+</header>
+
+<section class="team">
+
+<div class="card">
+<img src="WhatsApp Image 2026-03-17 at 2.14.27 PM.jpeg">
+<h3>Aryan Sawant</h3>
+<div class="role">Team Lead</div>
+<p>Responsible for guiding the team and managing project development.</p>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-03-17 at 2.31.10 PM.jpeg">
+<h3>Shaswat Joshi</h3>
+<div class="role">Developer</div>
+<p>Works on building and implementing technical solutions.</p>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-03-17 at 2.33.25 PM.jpeg">
+<h3>Tanay Bhujade</h3>
+<div class="role">Designer</div>
+<p>Creates UI/UX designs and improves user experience.</p>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-03-17 at 2.25.16 PM.jpeg">
+<h3>Chinmay Chauhan</h3>
+<div class="role">Engineer</div>
+<p>Focuses on system architecture and performance.</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Vihaan Team. All rights reserved.
+</footer>
+
+</body>
+</html>
